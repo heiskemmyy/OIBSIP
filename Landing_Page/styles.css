@@ -1,40 +1,58 @@
 /* General Styles */
-body {
-    font-family: Arial, sans-serif;
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
     line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 .container {
     width: 80%;
     margin: auto;
     overflow: hidden;
+    max-width: 1200px;
 }
 
 header {
     background: #333;
     color: #fff;
     padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
 }
 
 header h1 {
-    float: left;
+    margin: 0;
+    flex: 1 0 auto; /* Allow flex item to grow and shrink */
+    text-align: center;
 }
 
 header nav {
-    float: right;
+    flex: 1 0 auto; /* Allow flex item to grow and shrink */
+    text-align: right;
 }
 
 header nav ul {
     margin: 0;
     padding: 0;
     list-style: none;
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
 }
 
 header nav ul li {
-    display: inline;
-    margin-left: 20px;
+    margin: 0 10px;
 }
 
 header nav ul li a {
@@ -47,10 +65,12 @@ header nav ul li a {
     background: url('img/hero-bg.jpg') no-repeat center center/cover;
     color: #fff;
     height: 60vh;
-    text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    flex-direction: column;
+    width: 100%;
 }
 
 .hero h2 {
@@ -59,6 +79,7 @@ header nav ul li a {
 
 .hero p {
     font-size: 1.2rem;
+    margin: 10px 0;
 }
 
 .hero .btn-primary {
@@ -68,112 +89,173 @@ header nav ul li a {
     border: none;
     cursor: pointer;
     text-decoration: none;
-    margin-top: 20px;
+    font-size: 1rem;
 }
 
-/* Sections */
-section {
+/* Features Section */
+.features {
     padding: 2rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
 }
 
-.features .feature, .advantages .advantage {
+.features .feature {
+    flex: 1 1 300px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
+    background: #f4f4f4;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.features .feature img {
+    max-width: 100px;
     margin-bottom: 20px;
 }
 
-.features .feature img, .advantages .advantage img {
-    width: 150px;
-    height: auto;
+.features .feature h3 {
     margin-bottom: 10px;
-}
-
-/* Advantages Section */
-.advantages {
-    background: #f4f4f4;
-}
-
-/* Servers Section */
-.servers img {
-    width: 100%;
-    height: auto;
-    max-width: 600px;
-    display: block;
-    margin: auto;
 }
 
 /* Pricing Section */
 .pricing {
-    display: flex;
-    justify-content: space-between;
-}
-
-.pricing-plan {
-    background: #fff;
-    border: 1px solid #ddd;
-    padding: 20px;
+    padding: 2rem 0;
     text-align: center;
-    width: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
 }
 
-.pricing-plan h3 {
-    margin-bottom: 20px;
+.pricing .price-plan {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    margin: 10px;
+    flex: 1 1 300px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-.pricing-plan p {
-    font-size: 1.5rem;
-    margin-bottom: 20px;
+/* Contact Section */
+.contact {
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.pricing-plan ul {
-    list-style: none;
-    padding: 0;
-    margin-bottom: 20px;
-}
-
-.pricing-plan ul li {
-    margin-bottom: 10px;
-}
-
-.pricing-plan .btn-primary {
-    background: #ff6347;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    text-decoration: none;
-}
-
-/* Contact Form */
-.contact-form form {
+.contact form {
     display: flex;
     flex-direction: column;
+    width: 100%;
+    max-width: 600px;
 }
 
-.contact-form form label {
+.contact form label {
     margin-top: 10px;
 }
 
-.contact-form form input, .contact-form form textarea {
+.contact form input,
+.contact form textarea {
     padding: 10px;
     margin-top: 5px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
 }
 
-.contact-form form button {
-    background: #ff6347;
+.contact form input[type="submit"] {
+    background: #333;
     color: #fff;
-    padding: 10px 20px;
     border: none;
     cursor: pointer;
-    text-decoration: none;
-    margin-top: 20px;
+    padding: 10px;
+    border-radius: 4px;
 }
 
-/* Footer */
 footer {
     background: #333;
     color: #fff;
     text-align: center;
     padding: 1rem 0;
+    margin-top: auto;
+    width: 100%;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    .container {
+        width: 90%;
+    }
+
+    .features .feature,
+    .pricing .price-plan {
+        flex: 1 1 calc(50% - 20px);
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header nav ul {
+        justify-content: center;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+
+    .hero {
+        height: 40vh;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .features .feature,
+    .pricing .price-plan {
+        flex: 1 1 100%;
+    }
+
+    .contact form label,
+    .contact form input,
+    .contact form textarea {
+        margin-top: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero h2 {
+        font-size: 1.5rem;
+    }
+
+    .hero p {
+        font-size: 0.9rem;
+    }
+
+    .hero .btn-primary {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
 }
