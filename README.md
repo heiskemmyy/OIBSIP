@@ -43,5 +43,3 @@ This project is licensed under the [MIT License](LICENSE).
 ## Contact
 
 For any questions or feedback, please contact me at [emmanuel16menyah@gmail.com](mailto:emmanuel16menyah@gmail.com).
-
-```
