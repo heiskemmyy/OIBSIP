@@ -1,3 +1,5 @@
+Here's the revised `README.md` file with some adjustments:
+
 ```markdown
 # Emmanuel Amoa-Menyah's Web Development Portfolio
 
@@ -11,9 +13,9 @@ Welcome to my web development portfolio! This project showcases a landing page, 
 
 ## Technologies Used
 
-- **HTML**: Structure of the web pages.
-- **CSS**: Styling and responsive design.
-- **JavaScript**: Temperature conversion functionality.
+- **HTML:** Structure of the web pages.
+- **CSS:** Styling and responsive design.
+- **JavaScript:** Temperature conversion functionality.
 
 ## Installation
 
@@ -27,14 +29,14 @@ Welcome to my web development portfolio! This project showcases a landing page, 
    ```
 3. Open the `landing_page.html` file in your browser to view the landing page:
    ```bash
-   open public/index.html
+   open landing_page.html
    ```
 
 ## Usage
 
 - **Landing Page:** Visit `landing_page.html` to see the landing page.
 - **Portfolio Page:** Navigate to `portfolio.html` to view the portfolio details.
-- **Temperature Converter:** Use the tool available on `portfolio.html` to convert temperatures.
+- **Temperature Converter:** Use the temperature converter tool available on `portfolio.html` to convert temperatures.
 
 ## License
 
@@ -43,3 +45,11 @@ This project is licensed under the [MIT License](LICENSE).
 ## Contact
 
 For any questions or feedback, please contact me at [emmanuel16menyah@gmail.com](mailto:emmanuel16menyah@gmail.com).
+```
+
+### Changes Made:
+
+1. Adjusted some of the text for clarity and consistency.
+2. Updated the `Installation` section to reflect the correct filename for opening the project.
+
+You can now add this `README.md` to your project repository on GitHub. If you need any more changes or additions, feel free to ask!
