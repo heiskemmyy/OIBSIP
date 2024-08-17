@@ -76,3 +76,98 @@ footer {
   bottom: 0;
   width: 100%;
 }
+/* Portfolio Page Specific Styles */
+
+/* About Me Section */
+#about-me {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+#about-me .bio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#about-me .profile-photo {
+    width: 150px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+#about-me p {
+    max-width: 600px;
+    font-size: 18px;
+}
+
+/* Skills Section */
+#skills {
+    background-color: #f0f8ff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#skills h2 {
+    font-size: 28px;
+    color: #003366;
+}
+
+#skills ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#skills ul li {
+    display: inline-block;
+    margin: 10px;
+    font-size: 18px;
+    background-color: #003366;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+/* Projects Section */
+#projects {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#projects h2 {
+    font-size: 28px;
+    color: #003366;
+}
+
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project-item {
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f0f8ff;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.project-item h3 {
+    font-size: 22px;
+    color: #003366;
+}
+
+.project-item p {
+    font-size: 16px;
+    color: #666;
+}
+
+.project-item a {
+    color: #00509e;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
