@@ -1,6 +1,6 @@
 /* General Styles */
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
   margin: 0;
   padding: 0;
   background-color: #0a0a23; /* Dark background for better contrast */
@@ -281,65 +281,65 @@ footer p {
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
   header {
-      flex-direction: column;
-      text-align: center;
+    flex-direction: column;
+    text-align: center;
   }
 
   header nav ul {
-      flex-direction: column;
+    flex-direction: column;
   }
 
   header nav ul li {
-      margin: 10px 0;
+    margin: 10px 0;
   }
 
   .project-item {
-      width: 90%;
+    width: 90%;
   }
 
   .converter {
-      max-width: 100%;
-      padding: 10px;
+    max-width: 100%;
+    padding: 10px;
   }
 
   .converter input,
   .converter select,
   .converter button {
-      font-size: 16px;
-      padding: 10px;
+    font-size: 16px;
+    padding: 10px;
   }
 }
 
 @media (max-width: 480px) {
   .intro h1 {
-      font-size: 28px;
+    font-size: 28px;
   }
 
   .intro p {
-      font-size: 14px;
+    font-size: 14px;
   }
 
   .cta-button {
-      font-size: 16px;
-      padding: 10px 20px;
+    font-size: 16px;
+    padding: 10px 20px;
   }
 
   #about-me p {
-      font-size: 16px;
+    font-size: 16px;
   }
 
   .project-item {
-      width: 100%;
+    width: 100%;
   }
 
   .converter input,
   .converter select,
   .converter button {
-      font-size: 14px;
-      padding: 8px;
+    font-size: 14px;
+    padding: 8px;
   }
 
   footer {
-      font-size: 14px;
+    font-size: 14px;
   }
 }
