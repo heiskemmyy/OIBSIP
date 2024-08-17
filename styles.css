@@ -1,6 +1,6 @@
 /* General Styles */
 body {
-  font-family: "Arial", sans-serif;
+  font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
   background-color: #0a0a23; /* Dark background for better contrast */
@@ -54,7 +54,7 @@ header nav ul li a:hover {
 /* Main Section */
 main {
   text-align: center;
-  padding: 100px 20px;
+  padding: 60px 20px;
   background-color: #0a0a23;
 }
 
@@ -154,197 +154,149 @@ main {
 /* Projects Section */
 #projects {
   padding: 60px 20px;
-  background-color: #0a0a23;
+  text-align: center;
+  background-color: #1a1a40;
+  color: #ffffff;
 }
 
 #projects h2 {
-  text-align: center;
   font-size: 36px;
   color: #ffffff;
-  text-shadow: 0px 0px 10px rgba(0, 182, 255, 0.8);
+  text-shadow: 0px 0px 15px rgba(255, 255, 255, 0.8);
 }
 
 .project-list {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .project-item {
-  background-color: #1a1a40;
-  border-radius: 8px;
+  width: 300px;
+  margin: 20px;
   padding: 20px;
-  margin: 15px;
-  width: 80%;
-  max-width: 600px;
-  text-align: center;
+  background-color: #2b2b4f;
+  border-radius: 10px;
+  text-align: left;
   box-shadow: 0px 0px 15px rgba(0, 182, 255, 0.6);
 }
 
 .project-item h3 {
-  font-size: 28px;
-  color: #ffffff;
+  font-size: 24px;
+  color: #00b6ff;
 }
 
 .project-item p {
+  font-size: 16px;
   color: #b8b8d9;
 }
 
 .project-item a {
+  display: block;
+  margin-top: 10px;
+  font-size: 16px;
   color: #00b6ff;
   text-decoration: none;
   font-weight: bold;
 }
 
 .project-item a:hover {
-  text-decoration: underline;
+  text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8);
 }
 
 /* Temperature Converter Section */
 #temperature-converter {
   padding: 60px 20px;
-  background-color: #1a1a40;
   text-align: center;
+  background-color: #2b2b4f;
 }
 
-.converter input,
-.converter select,
-.converter button {
-  font-size: 18px;
-  padding: 10px;
-  border-radius: 8px;
-  border: none;
-  margin: 5px;
+#temperature-converter h2 {
+  font-size: 36px;
+  color: #ffffff;
+  text-shadow: 0px 0px 15px rgba(255, 255, 255, 0.8);
+}
+
+.converter {
+  display: inline-block;
+  padding: 20px;
+  background-color: #1c1c3b;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 182, 255, 0.8);
 }
 
 .converter input,
 .converter select {
-  width: 250px;
+  padding: 10px;
+  margin-right: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
 }
 
 .converter button {
   background-color: #00509e;
   color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s;
+  box-shadow: 0px 0px 15px rgba(0, 182, 255, 0.8);
 }
 
 .converter button:hover {
   background-color: #00b6ff;
+  box-shadow: 0px 0px 30px rgba(0, 182, 255, 1);
 }
 
-.converter p {
+/* Contact Page */
+#contact {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #1a1a40;
+}
+
+#contact h1 {
+  font-size: 40px;
+  color: #ffffff;
+  text-shadow: 0px 0px 20px rgba(0, 182, 255, 0.8);
+  margin-bottom: 20px;
+}
+
+#contact p {
   font-size: 20px;
-  color: #f5f5f5;
-  margin-top: 20px;
+  color: #b8b8d9;
+  max-width: 800px;
+  margin: 0 auto 40px auto;
 }
 
-/* Footer */
+#contact ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  text-align: left;
+}
+
+#contact ul li {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+#contact a {
+  color: #00b6ff;
+  text-decoration: none;
+}
+
+#contact a:hover {
+  text-decoration: underline;
+}
+
+/* Footer Styling */
 footer {
   background-color: #1c1c3b;
   color: #f5f5f5;
   text-align: center;
   padding: 20px;
   box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.7);
-}
-
-/* Responsive Styles */
-
-/* Mobile Devices */
-@media (max-width: 768px) {
-  header {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  header nav ul {
-    flex-direction: column;
-    padding: 0;
-  }
-
-  header nav ul li {
-    margin: 10px 0;
-  }
-
-  .intro h1 {
-    font-size: 36px;
-  }
-
-  .intro p {
-    font-size: 18px;
-    margin: 0 auto 30px auto;
-  }
-
-  .cta-button {
-    font-size: 18px;
-    padding: 10px 20px;
-  }
-
-  #about-me .bio {
-    flex-direction: column;
-  }
-
-  #about-me .profile-photo {
-    width: 120px;
-  }
-
-  #skills ul {
-    flex-direction: column;
-  }
-
-  #skills ul li {
-    margin: 10px 0;
-  }
-
-  .project-item {
-    width: 90%;
-  }
-
-  .converter input,
-  .converter select,
-  .converter button {
-    width: 100%;
-  }
-}
-
-/* Tablet Devices (768px to 1024px) */
-@media (min-width: 769px) and (max-width: 1024px) {
-  header {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  header nav ul {
-    flex-direction: row;
-  }
-
-  header nav ul li {
-    margin-left: 15px;
-  }
-
-  .intro h1 {
-    font-size: 40px;
-  }
-
-  .intro p {
-    font-size: 19px;
-    margin: 0 auto 35px auto;
-  }
-
-  .cta-button {
-    font-size: 19px;
-    padding: 12px 25px;
-  }
-
-  #about-me .profile-photo {
-    width: 140px;
-  }
-
-  #skills ul li {
-    font-size: 16px;
-  }
-
-  .project-item {
-    width: 85%;
-  }
 }
