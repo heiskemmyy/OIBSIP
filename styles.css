@@ -1,22 +1,10 @@
-/* Define CSS Variables */
-:root {
-  --background-dark: #0a0a23;
-  --background-light: #1a1a40;
-  --primary-color: #00509e;
-  --hover-color: #00b6ff;
-  --text-color-light: #f5f5f5;
-  --text-color-dark: #b8b8d9;
-  --box-shadow-light: rgba(0, 182, 255, 0.8);
-  --box-shadow-dark: rgba(255, 255, 255, 0.4);
-}
-
 /* General Styles */
 body {
-  font-family: "Arial", sans-serif;
+  font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: var(--background-dark);
-  color: var(--text-color-light);
+  background-color: #0a0a23; /* Dark background for better contrast */
+  color: #e0e0e0;
   line-height: 1.6;
 }
 
@@ -25,25 +13,17 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--background-light);
+  background-color: #1c1c3b;
   padding: 20px;
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.7);
-  position: relative;
 }
 
 header .logo {
   font-size: 28px;
-  color: var(--text-color-light);
+  color: #f5f5f5;
   font-weight: bold;
   letter-spacing: 2px;
   text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.6);
-}
-
-header .nav-toggle {
-  display: none;
-  font-size: 28px;
-  color: var(--text-color-light);
-  cursor: pointer;
 }
 
 header nav ul {
@@ -58,7 +38,7 @@ header nav ul li {
 }
 
 header nav ul li a {
-  color: var(--text-color-light);
+  color: #f5f5f5;
   text-decoration: none;
   font-size: 18px;
   padding: 8px 16px;
@@ -67,63 +47,46 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-  background-color: var(--hover-color);
+  background-color: #5757a1;
   text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8);
-}
-
-/* Mobile Menu Styling */
-nav ul {
-  display: flex;
-}
-
-nav ul.show {
-  display: block;
-}
-
-nav ul.hide {
-  display: none;
-}
-
-.nav-toggle {
-  display: block;
 }
 
 /* Main Section */
 main {
   text-align: center;
-  padding: 60px 20px;
-  background-color: var(--background-dark);
+  padding: 100px 20px;
+  background-color: #0a0a23;
 }
 
 .intro h1 {
   font-size: 50px;
-  color: var(--text-color-light);
-  text-shadow: 0px 0px 20px var(--box-shadow-light);
+  color: #ffffff;
+  text-shadow: 0px 0px 20px rgba(0, 182, 255, 0.8);
   margin-bottom: 20px;
 }
 
 .intro p {
   font-size: 20px;
-  color: var(--text-color-dark);
+  color: #b8b8d9;
   max-width: 800px;
   margin: 0 auto 40px auto;
 }
 
 .cta-button {
-  background-color: var(--primary-color);
-  color: var(--text-color-light);
+  background-color: #00509e;
+  color: #fff;
   padding: 15px 30px;
   text-decoration: none;
   border-radius: 10px;
   font-size: 20px;
   font-weight: bold;
-  box-shadow: 0px 0px 15px var(--box-shadow-light);
+  box-shadow: 0px 0px 15px rgba(0, 182, 255, 0.8);
   transition: all 0.3s;
 }
 
 .cta-button:hover {
-  background-color: var(--hover-color);
-  box-shadow: 0px 0px 30px var(--box-shadow-light);
+  background-color: #00b6ff;
+  box-shadow: 0px 0px 30px rgba(0, 182, 255, 1);
   text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.6);
 }
 
@@ -131,7 +94,7 @@ main {
 #about-me {
   text-align: center;
   padding: 60px 20px;
-  background-color: var(--background-light);
+  background-color: #1a1a40;
 }
 
 #about-me .bio {
@@ -145,27 +108,27 @@ main {
   width: 150px;
   border-radius: 50%;
   margin-bottom: 20px;
-  box-shadow: 0px 0px 20px var(--box-shadow-light);
+  box-shadow: 0px 0px 20px rgba(0, 182, 255, 0.6);
 }
 
 #about-me p {
   max-width: 700px;
   font-size: 18px;
-  color: var(--text-color-dark);
+  color: #b8b8d9;
   text-align: center;
 }
 
 /* Skills Section */
 #skills {
-  background-color: var(--background-light);
+  background-color: #2b2b4f;
   padding: 60px 20px;
   text-align: center;
-  color: var(--text-color-light);
+  color: #f5f5f5;
 }
 
 #skills h2 {
   font-size: 36px;
-  color: var(--text-color-light);
+  color: #ffffff;
   text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.6);
 }
 
@@ -183,23 +146,23 @@ main {
   padding: 10px 20px;
   font-size: 18px;
   background-color: #3b3b6b;
-  color: var(--text-color-light);
+  color: #f5f5f5;
   border-radius: 8px;
-  box-shadow: 0px 0px 10px var(--box-shadow-dark);
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.4);
 }
 
 /* Projects Section */
 #projects {
   padding: 60px 20px;
   text-align: center;
-  background-color: var(--background-light);
-  color: var(--text-color-light);
+  background-color: #1a1a40;
+  color: #ffffff;
 }
 
 #projects h2 {
   font-size: 36px;
-  color: var(--text-color-light);
-  text-shadow: 0px 0px 15px var(--box-shadow-light);
+  color: #ffffff;
+  text-shadow: 0px 0px 15px rgba(255, 255, 255, 0.8);
 }
 
 .project-list {
@@ -215,172 +178,82 @@ main {
   background-color: #2b2b4f;
   border-radius: 10px;
   text-align: left;
-  box-shadow: 0px 0px 15px var(--box-shadow-light);
+  box-shadow: 0px 0px 15px rgba(0, 182, 255, 0.6);
 }
 
 .project-item h3 {
-  margin-top: 0;
-  color: var(--text-color-light);
+  font-size: 24px;
+  color: #00b6ff;
+}
+
+.project-item p {
+  font-size: 16px;
+  color: #b8b8d9;
 }
 
 .project-item a {
-  color: var(--hover-color);
+  display: block;
+  margin-top: 10px;
+  font-size: 16px;
+  color: #00b6ff;
   text-decoration: none;
+  font-weight: bold;
 }
 
 .project-item a:hover {
-  text-decoration: underline;
-}
-
-/* Contact Section */
-#contact {
-  background-color: var(--background-light);
-  padding: 60px 20px;
-  text-align: center;
-  color: var(--text-color-light);
-}
-
-#contact h1 {
-  font-size: 36px;
-  color: var(--text-color-light);
-  text-shadow: 0px 0px 10px var(--box-shadow-light);
-}
-
-#contact ul {
-  list-style: none;
-  padding: 0;
-}
-
-#contact ul li {
-  font-size: 18px;
-  margin: 10px 0;
+  text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8);
 }
 
 /* Temperature Converter Section */
 #temperature-converter {
   padding: 60px 20px;
-  background-color: var(--background-light);
-  color: var(--text-color-light);
   text-align: center;
+  background-color: #2b2b4f;
+}
+
+#temperature-converter h2 {
+  font-size: 36px;
+  color: #ffffff;
+  text-shadow: 0px 0px 15px rgba(255, 255, 255, 0.8);
 }
 
 .converter {
-  max-width: 400px;
-  margin: 0 auto;
-  background-color: #2b2b4f;
+  display: inline-block;
   padding: 20px;
+  background-color: #1c1c3b;
   border-radius: 10px;
-  box-shadow: 0px 0px 15px var(--box-shadow-light);
+  box-shadow: 0px 0px 20px rgba(0, 182, 255, 0.8);
 }
 
 .converter input,
-.converter select,
-.converter button {
-  display: block;
-  width: 100%;
-  margin: 10px 0;
-  padding: 15px;
-  font-size: 18px;
-  border-radius: 8px;
-  border: 1px solid #ffffff;
-  background-color: #3b3b6b;
-  color: var(--text-color-light);
-  box-shadow: 0px 0px 10px var(--box-shadow-dark);
+.converter select {
+  padding: 10px;
+  margin-right: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
 }
 
 .converter button {
-  background-color: var(--primary-color);
+  background-color: #00509e;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s;
+  box-shadow: 0px 0px 15px rgba(0, 182, 255, 0.8);
 }
 
 .converter button:hover {
-  background-color: var(--hover-color);
+  background-color: #00b6ff;
+  box-shadow: 0px 0px 30px rgba(0, 182, 255, 1);
 }
 
 /* Footer Styling */
 footer {
-  background-color: var(--background-light);
-  color: var(--text-color-light);
+  background-color: #1c1c3b;
+  color: #f5f5f5;
   text-align: center;
   padding: 20px;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
   box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.7);
-}
-
-footer p {
-  margin: 0;
-  font-size: 16px;
-}
-
-/* Media Queries for Responsiveness */
-@media (max-width: 768px) {
-  header {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  header .logo {
-    margin-bottom: 10px;
-  }
-
-  header .nav-toggle {
-    display: block;
-  }
-
-  header nav ul {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-    background-color: var(--background-light);
-    position: absolute;
-    top: 80px;
-    left: 0;
-    padding: 10px;
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.7);
-  }
-
-  header nav ul.show {
-    display: flex;
-  }
-
-  header nav ul li {
-    margin: 10px 0;
-  }
-}
-
-@media (max-width: 480px) {
-  .intro h1 {
-    font-size: 28px;
-  }
-
-  .intro p {
-    font-size: 14px;
-  }
-
-  .cta-button {
-    font-size: 16px;
-    padding: 10px 20px;
-  }
-
-  #about-me p {
-    font-size: 16px;
-  }
-
-  .project-item {
-    width: 100%;
-  }
-
-  .converter input,
-  .converter select,
-  .converter button {
-    font-size: 14px;
-    padding: 8px;
-  }
-
-  footer {
-    font-size: 14px;
-  }
 }
