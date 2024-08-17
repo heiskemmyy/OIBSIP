@@ -1,6 +1,3 @@
-Here's the revised `README.md` file with some adjustments:
-
-```markdown
 # Emmanuel Amoa-Menyah's Web Development Portfolio
 
 Welcome to my web development portfolio! This project showcases a landing page, portfolio page, and a temperature converter tool. The website is designed with a dark theme and is responsive, making it accessible on both mobile and laptop devices.
