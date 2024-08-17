@@ -1,10 +1,10 @@
 function convertTemperature() {
-  const input = document.getElementById("temp-input").value;
+  const input = parseFloat(document.getElementById("temp-input").value);
   const scale = document.getElementById("temp-scale").value;
   const resultElement = document.getElementById("result");
 
-  if (!input) {
-    resultElement.textContent = "Please enter a temperature.";
+  if (isNaN(input)) {
+    resultElement.textContent = "Please enter a valid temperature.";
     return;
   }
 
@@ -20,7 +20,7 @@ function convertTemperature() {
       resultElement.textContent = `${input} °F is ${result.toFixed(2)} °C`;
       break;
     case "celsius-to-kelvin":
-      result = parseFloat(input) + 273.15;
+      result = input + 273.15;
       resultElement.textContent = `${input} °C is ${result.toFixed(2)} K`;
       break;
     case "kelvin-to-celsius":
@@ -39,3 +39,12 @@ function convertTemperature() {
       resultElement.textContent = "Invalid conversion scale.";
   }
 }
+
+document.addEventListener("DOMContentLoaded", function() {
+  const navToggle = document.querySelector(".nav-toggle");
+  const navMenu = document.querySelector("header nav ul");
+
+  navToggle.addEventListener("click", function() {
+    navMenu.classList.toggle("show");
+  });
+});
