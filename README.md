@@ -40,11 +40,13 @@ Welcome to my web development portfolio! This project showcases a landing page, 
 This project meets the Level 1 Web Development and Designing requirements of an internship at Oasis Infobyte. The tasks include:
 
 1. **Landing Page:**
+
    - Added columns, sections, headers, and footers using HTML and CSS.
    - Ensured alignment, padding, and color palette are visually appealing.
    - Implemented responsive design to make the page look good on both mobile and laptop devices.
 
 2. **Personal Portfolio:**
+
    - Created a personal portfolio showcasing various skills and projects.
    - Added a profile image and contact information.
    - Displayed skills and projects in a well-organized manner.

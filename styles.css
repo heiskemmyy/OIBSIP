@@ -178,104 +178,40 @@ main {
   background-color: #2b2b4f;
   border-radius: 10px;
   text-align: left;
-  box-shadow: 0px 0px 15px rgba(0, 182, 255, 0.6);
-}
-
-.project-item h3 {
-  font-size: 24px;
-  color: #00b6ff;
-}
-
-.project-item p {
-  font-size: 16px;
-  color: #b8b8d9;
-}
-
-.project-item a {
-  display: block;
-  margin-top: 10px;
-  font-size: 16px;
-  color: #00b6ff;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.project-item a:hover {
-  text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8);
-}
-
-/* Temperature Converter Section */
-#temperature-converter {
-  padding: 60px 20px;
-  text-align: center;
-  background-color: #2b2b4f;
-}
-
-#temperature-converter h2 {
-  font-size: 36px;
-  color: #ffffff;
-  text-shadow: 0px 0px 15px rgba(255, 255, 255, 0.8);
-}
-
-.converter {
-  display: inline-block;
-  padding: 20px;
-  background-color: #1c1c3b;
-  border-radius: 10px;
-  box-shadow: 0px 0px 20px rgba(0, 182, 255, 0.8);
-}
-
-.converter input,
-.converter select {
-  padding: 10px;
-  margin-right: 10px;
-  font-size: 16px;
-  border-radius: 5px;
-  border: none;
-}
-
-.converter button {
-  background-color: #00509e;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
   box-shadow: 0px 0px 15px rgba(0, 182, 255, 0.8);
 }
 
-.converter button:hover {
-  background-color: #00b6ff;
-  box-shadow: 0px 0px 30px rgba(0, 182, 255, 1);
+.project-item h3 {
+  margin-top: 0;
+  color: #ffffff;
 }
 
-/* Contact Page */
+.project-item a {
+  color: #00b6ff;
+  text-decoration: none;
+}
+
+.project-item a:hover {
+  text-decoration: underline;
+}
+
+/* Contact Section */
 #contact {
+  background-color: #2b2b4f;
   padding: 60px 20px;
   text-align: center;
-  background-color: #1a1a40;
+  color: #f5f5f5;
 }
 
 #contact h1 {
-  font-size: 40px;
+  font-size: 36px;
   color: #ffffff;
-  text-shadow: 0px 0px 20px rgba(0, 182, 255, 0.8);
-  margin-bottom: 20px;
-}
-
-#contact p {
-  font-size: 20px;
-  color: #b8b8d9;
-  max-width: 800px;
-  margin: 0 auto 40px auto;
+  text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.6);
 }
 
 #contact ul {
   list-style: none;
   padding: 0;
-  margin: 0;
-  display: inline-block;
-  text-align: left;
 }
 
 #contact ul li {
@@ -283,13 +219,46 @@ main {
   margin: 10px 0;
 }
 
-#contact a {
-  color: #00b6ff;
-  text-decoration: none;
+/* Temperature Converter Section */
+#temperature-converter {
+  padding: 60px 20px;
+  background-color: #1a1a40;
+  color: #ffffff;
+  text-align: center;
 }
 
-#contact a:hover {
-  text-decoration: underline;
+.converter {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #2b2b4f;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px rgba(0, 182, 255, 0.8);
+}
+
+.converter input,
+.converter select,
+.converter button {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 15px;
+  font-size: 18px;
+  border-radius: 8px;
+  border: 1px solid #ffffff;
+  background-color: #3b3b6b;
+  color: #ffffff;
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.4);
+}
+
+.converter button {
+  background-color: #00509e;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.converter button:hover {
+  background-color: #00b6ff;
 }
 
 /* Footer Styling */
@@ -298,5 +267,79 @@ footer {
   color: #f5f5f5;
   text-align: center;
   padding: 20px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
   box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.7);
+}
+
+footer p {
+  margin: 0;
+  font-size: 16px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  header {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  header nav ul {
+      flex-direction: column;
+  }
+
+  header nav ul li {
+      margin: 10px 0;
+  }
+
+  .project-item {
+      width: 90%;
+  }
+
+  .converter {
+      max-width: 100%;
+      padding: 10px;
+  }
+
+  .converter input,
+  .converter select,
+  .converter button {
+      font-size: 16px;
+      padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .intro h1 {
+      font-size: 28px;
+  }
+
+  .intro p {
+      font-size: 14px;
+  }
+
+  .cta-button {
+      font-size: 16px;
+      padding: 10px 20px;
+  }
+
+  #about-me p {
+      font-size: 16px;
+  }
+
+  .project-item {
+      width: 100%;
+  }
+
+  .converter input,
+  .converter select,
+  .converter button {
+      font-size: 14px;
+      padding: 8px;
+  }
+
+  footer {
+      font-size: 14px;
+  }
 }
