@@ -26,7 +26,7 @@ Welcome to my web development portfolio! This project showcases a landing page, 
    ```
 3. Open the `portfolio.html` file in your browser to view the project:
    ```bash
-   open portfolio.html
+   start portfolio.html
    ```
 
 ## Usage
