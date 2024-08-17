@@ -154,102 +154,92 @@ main {
 /* Projects Section */
 #projects {
     padding: 60px 20px;
-    text-align: center;
-    background-color: #1a1a40;
-    color: #ffffff;
+    background-color: #0a0a23;
 }
 
 #projects h2 {
+    text-align: center;
     font-size: 36px;
     color: #ffffff;
-    text-shadow: 0px 0px 15px rgba(255, 255, 255, 0.8);
+    text-shadow: 0px 0px 10px rgba(0, 182, 255, 0.8);
 }
 
 .project-list {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .project-item {
-    width: 300px;
-    margin: 20px;
+    background-color: #1a1a40;
+    border-radius: 8px;
     padding: 20px;
-    background-color: #2b2b4f;
-    border-radius: 10px;
-    text-align: left;
+    margin: 15px;
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
     box-shadow: 0px 0px 15px rgba(0, 182, 255, 0.6);
 }
 
 .project-item h3 {
-    font-size: 24px;
-    color: #00b6ff;
+    font-size: 28px;
+    color: #ffffff;
 }
 
 .project-item p {
-    font-size: 16px;
     color: #b8b8d9;
 }
 
 .project-item a {
-    display: block;
-    margin-top: 10px;
-    font-size: 16px;
     color: #00b6ff;
     text-decoration: none;
     font-weight: bold;
 }
 
 .project-item a:hover {
-    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8);
+    text-decoration: underline;
 }
 
 /* Temperature Converter Section */
 #temperature-converter {
     padding: 60px 20px;
+    background-color: #1a1a40;
     text-align: center;
-    background-color: #2b2b4f;
 }
 
-#temperature-converter h2 {
-    font-size: 36px;
-    color: #ffffff;
-    text-shadow: 0px 0px 15px rgba(255, 255, 255, 0.8);
-}
-
-.converter {
-    display: inline-block;
-    padding: 20px;
-    background-color: #1c1c3b;
-    border-radius: 10px;
-    box-shadow: 0px 0px 20px rgba(0, 182, 255, 0.8);
+.converter input,
+.converter select,
+.converter button {
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    margin: 5px;
 }
 
 .converter input,
 .converter select {
-    padding: 10px;
-    margin-right: 10px;
-    font-size: 16px;
-    border-radius: 5px;
-    border: none;
+    width: 250px;
 }
 
 .converter button {
     background-color: #00509e;
     color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
     cursor: pointer;
-    box-shadow: 0px 0px 15px rgba(0, 182, 255, 0.8);
+    transition: background-color 0.3s;
 }
 
 .converter button:hover {
     background-color: #00b6ff;
-    box-shadow: 0px 0px 30px rgba(0, 182, 255, 1);
 }
 
-/* Footer Styling */
+.converter p {
+    font-size: 20px;
+    color: #f5f5f5;
+    margin-top: 20px;
+}
+
+/* Footer */
 footer {
     background-color: #1c1c3b;
     color: #f5f5f5;
