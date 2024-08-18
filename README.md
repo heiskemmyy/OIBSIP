@@ -1,4 +1,4 @@
-# Emmanuel Amoa-Menyah's Web Development Portfolio
+# Level 1 Web Development and Designing internship by Oasis Infobyte.
 
 Welcome to my web development portfolio! This project showcases a landing page, portfolio page, and a temperature converter tool. The website is designed with a dark theme and is responsive, making it accessible on both mobile and laptop devices.
 
