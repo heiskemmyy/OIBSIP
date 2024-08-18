@@ -24,7 +24,7 @@ Welcome to my web development portfolio! This project showcases a landing page, 
    ```bash
    cd OIBSIP
    ```
-3. Open the `portfolio.html` file in your browser to view the project:
+3. Open the `landing_page.html` file in your browser to view the project:
    ```bash
    start portfolio.html
    ```
@@ -53,7 +53,7 @@ This project meets the Level 1 Web Development and Designing requirements of an 
 
 3. **Temperature Converter:**
    - Added input field for temperature, dropdown menu for selecting conversion scale, and a "Convert" button.
-   - Implemented temperature conversions between Celsius, Fahrenheit, and Kelvin.
+   - Implemented temperature conversions between Celsius, Fahrenheit
    - Validated user input to ensure it is a number.
    - Displayed the converted temperature with the correct unit.
 
