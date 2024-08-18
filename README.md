@@ -57,9 +57,6 @@ This project meets the Level 1 Web Development and Designing requirements of an 
    - Validated user input to ensure it is a number.
    - Displayed the converted temperature with the correct unit.
 
-## License
-
-This project is licensed under the [MIT License](LICENSE).
 
 ## Contact
 
