@@ -16,6 +16,7 @@ header {
   background-color: #1c1c3b;
   padding: 20px;
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.7);
+  flex-wrap: wrap; /* Allow wrapping for small screens */
 }
 
 header .logo {
@@ -31,6 +32,7 @@ header nav ul {
   margin: 0;
   padding: 0;
   display: flex;
+  flex-wrap: wrap; /* Wrap navigation items on smaller screens */
 }
 
 header nav ul li {
@@ -70,6 +72,17 @@ main {
   color: #b8b8d9;
   max-width: 800px;
   margin: 0 auto 40px auto;
+}
+
+/* Responsive Font Size for Intro Section */
+@media (max-width: 768px) {
+  .intro h1 {
+    font-size: 36px;
+  }
+
+  .intro p {
+    font-size: 18px;
+  }
 }
 
 .cta-button {
@@ -126,12 +139,6 @@ main {
   color: #f5f5f5;
 }
 
-#skills h2 {
-  font-size: 36px;
-  color: #ffffff;
-  text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.6);
-}
-
 #skills ul {
   list-style: none;
   padding: 0;
@@ -159,12 +166,6 @@ main {
   color: #ffffff;
 }
 
-#projects h2 {
-  font-size: 36px;
-  color: #ffffff;
-  text-shadow: 0px 0px 15px rgba(255, 255, 255, 0.8);
-}
-
 .project-list {
   display: flex;
   flex-wrap: wrap;
@@ -172,7 +173,8 @@ main {
 }
 
 .project-item {
-  width: 300px;
+  width: 100%; /* Default width for smaller screens */
+  max-width: 300px; /* Restrict max width */
   margin: 20px;
   padding: 20px;
   background-color: #2b2b4f;
@@ -181,40 +183,11 @@ main {
   box-shadow: 0px 0px 15px rgba(0, 182, 255, 0.6);
 }
 
-.project-item h3 {
-  font-size: 24px;
-  color: #00b6ff;
-}
-
-.project-item p {
-  font-size: 16px;
-  color: #b8b8d9;
-}
-
-.project-item a {
-  display: block;
-  margin-top: 10px;
-  font-size: 16px;
-  color: #00b6ff;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.project-item a:hover {
-  text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8);
-}
-
 /* Temperature Converter Section */
 #temperature-converter {
   padding: 60px 20px;
   text-align: center;
   background-color: #2b2b4f;
-}
-
-#temperature-converter h2 {
-  font-size: 36px;
-  color: #ffffff;
-  text-shadow: 0px 0px 15px rgba(255, 255, 255, 0.8);
 }
 
 .converter {
@@ -256,4 +229,53 @@ footer {
   text-align: center;
   padding: 20px;
   box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.7);
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  header nav ul {
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  header nav ul li {
+    margin: 10px 0;
+  }
+
+  .project-item {
+    max-width: 90%; /* Full width on mobile */
+    text-align: center; /* Center text */
+  }
+
+  .intro h1 {
+    font-size: 36px;
+  }
+
+  .intro p {
+    font-size: 16px;
+  }
+
+  #skills ul {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .intro h1 {
+    font-size: 30px;
+  }
+
+  .intro p {
+    font-size: 14px;
+  }
+
+  .cta-button {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
 }
