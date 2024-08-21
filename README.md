@@ -33,7 +33,7 @@ Welcome to my web development portfolio! This project showcases a landing page, 
 
 - **Landing Page:** Visit `landing_page.html` to see the landing page.
 - **Portfolio Page:** Navigate to `portfolio.html` to view the portfolio details and access the temperature converter tool.
-- **Temperature Converter:** Use the tool on `portfolio.html` to convert temperatures between Celsius, Fahrenheit, and Kelvin.
+- **Temperature Converter:** Use the tool on `portfolio.html` to convert temperatures between Celsius and Fahrenheit.
 
 ## Project Requirements
 
